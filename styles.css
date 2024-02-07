@@ -1,0 +1,664 @@
+/*ROJO   rgb(187, 56, 62);
+CREMA   rgb(252, 244, 236);
+AZUL   rgb(20, 84, 132);
+GRIS FUERTE   rgb(136, 128, 130);
+GRIS SUAVE    rgb(193, 185, 184);
+NEGRO    rgb(10 ,10 , 10); 
+
+---
+LIGHT GRAY    #F0F5F9
+GRAY   #C9D6DF
+DARKER GRAY   #52616B
+*/
+
+
+ @-webkit-keyframes menu {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes menu {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(1.1);
+              transform: scale(1.1);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,700;6..12,1000&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@900&family=Fira+Sans:wght@800&family=Lato:ital,wght@1,900&family=Nunito+Sans:opsz,wght@6..12,500&family=Raleway:wght@500&display=swap');
+
+html body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: rgb(252, 244, 236);
+}
+
+/*Parte del Menu*/
+
+.menu-container{
+    background-color: rgb(187, 56, 62);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0  1em  0 1em;
+}
+
+.spidershop-logo{
+    width: 6em;
+}
+
+
+.Spider-Shop-Title{
+    color:  rgb(245 ,245 , 245);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 2.0em;
+    margin: 0 0 0 1em;
+    
+}
+
+
+ul{
+    list-style: none;
+    display: flex;
+}
+
+li{
+    margin: 0  1em  0  1em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 700;
+}
+
+
+.contenedor-logo{
+    display: flex;
+    align-items: center;
+}
+
+i{
+    margin: 0  0.2em  0  0.2em;
+    color:  rgb(10 ,10 , 10);
+}
+
+.menu-responsive{
+    display: flex;
+    margin: 0;
+}
+
+/*Elementos a que linkean a otras parte de la página*/
+
+/*Spider shop*/
+.home{
+    text-decoration: none;
+    color:  rgb(245 ,245 , 245);
+    display: flex;
+    align-items: center;
+}
+
+.home:hover{
+    text-shadow: 0 0 3em  rgb(245 ,245 , 245);
+    transition: text-shadow 1.0s;
+}
+
+/*Linkea a otras partes de la tienda*/
+.menu{
+    text-decoration: none;
+    color:  rgb(245 ,245 , 245);
+}
+
+.menu:hover{
+    color: rgb(20, 84, 132);
+    transition: text-shadow 0.4s;
+    text-shadow: 0px 0 1em #52616B;
+    transition: color 0.2s;
+	-webkit-animation: menu 1.5s ease-in-out infinite both;
+	        animation: menu 1.5s ease-in-out infinite both;
+    
+}
+
+
+/*Redes sociales*/
+.social-media{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+}
+
+/*instagram*/
+.instagram-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+
+}
+
+.instagram-circle:hover{
+    background-image: linear-gradient(45deg, rgba(254,218,117,1), rgba(250,126,30,1), rgba(214,41,118,1), rgba(150,47,191,1), rgba(79,91,213,1));
+}
+
+.fa-instagram:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    padding: 0.35em;
+}
+
+
+/*whatsapp*/
+.whatsapp-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+}
+
+.whatsapp-circle:hover{
+    background-color: rgb(37, 211, 102);
+    transition: background-color 0.4s;
+}
+
+.fa-whatsapp:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-whatsapp:before {
+    padding: 0.35em;
+}
+
+
+/*facebook*/
+
+.facebook-circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(193, 185, 184);
+    margin: 0 0.5em 0 0.5em;
+    width: 3em;
+    height: 3em;
+    border-radius: 50px;
+}
+
+.facebook-circle:hover{
+    background-color: rgb(24, 119, 242);
+    transition: background-color 0.4s;
+}
+
+.fa-facebook-f:hover{
+    color:white;
+    transition: color 0.4s;
+}
+
+.fa-facebook-f:before {
+    padding: 0.5em 0.75em 0.5em 0.75em;
+}
+
+
+/*    NEW ARRIVAL/HOT SECTION SECTION */ 
+
+/* CONTIENE TODA LA SECCIÓN*/
+.new-arrival-container{
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+/*--------*/
+
+/* First Box*/
+.first-new-arrival{
+    background-color: #52616B;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 44em;
+    height: 28em;
+    color: rgb(245,245,245);
+}
+
+
+.first-arrival-text{
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.first-arrival-img{
+    width: 28em;
+}
+
+.first-arrival-size{
+    display: flex;
+}
+
+
+/*Second Box*/
+
+.second-new-arrival{
+    background-color: #F0F5F9;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 37em;
+    height: 13.5em;
+}
+
+
+.second-arrival-text{
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.second-arrival-img{
+    width: 13.5em;
+}
+
+.second-arrival-size{
+    display: flex;
+}
+
+/* Third Box */
+
+.third-new-arrival{
+    background-color:  #C9D6DF;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    width: 37em;
+    height: 13.5em;
+}
+
+
+.third-arrival-text{
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.third-arrival-img{
+    width: 13.5em;
+}
+
+.third-arrival-size{
+    display: flex;
+}
+
+/* - - - - -*/
+
+
+
+
+
+h1{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5em;
+}
+
+h2{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+}
+
+h3{
+    color:  rgb(10 ,10 , 10);
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 2.0em;
+    margin: 0;
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+.first-box{
+    display: flex;
+}
+
+
+.second-and-third-box{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.box{
+    margin: 0.5em;
+}
+
+.size-defined{
+    margin-left: 0.5em;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 500;
+    font-size: 2.0em;
+}
+
+.blanco{
+    color: rgb(245,245,245);
+}
+
+/*Reservar botones*/
+
+.button-center{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.reservar{
+    width: 7em;
+    height: 3.2em;
+    background-color: #F0F5F9;
+    border: none;
+    border-radius: 0.5em;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+
+/* RESPONSIVE PART*/
+
+@media only screen and (max-width: 1310px) {
+
+    /*MENU PART*/
+    .menu-container{
+        display: flex;
+        flex-direction: column;
+        padding: 0  0.2em  0 0.2em;
+    }
+
+    .menu-responsive{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    ul{
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    li{
+        margin: 0.1em 0.8em 0.1em 0.8em;
+    }
+
+    .home{
+        display: flex;
+        flex-direction: column ;
+        margin-bottom: 1em;
+    }
+
+    .social-media{
+        margin-bottom: 0.5em;
+    }
+
+
+
+    /*ARRIVALS PART*/
+
+    .new-arrival-container {
+        padding: 0.1em;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .first-new-arrival{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        background-color: #52616B;
+        color: rgb(245,245,245);
+    }
+    
+    
+    .first-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .first-arrival-img{
+        width: 100%;
+        height: 100%;
+
+    }
+    
+    .first-arrival-size{
+        display: flex;
+    }
+
+    .second-and-third-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+    /*Second Arrival Responsive Tablet*/
+    .second-new-arrival{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F5F9;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .second-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-arrival-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+    .second-arrival-size{
+        display: flex;
+
+    }
+    
+    .second-arrival-container{
+        display: flex;
+    }
+
+
+    /*Third Arrival Tablet*/
+
+    .third-new-arrival{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #C9D6DF;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .third-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-arrival-img{
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    .third-arrival-size{
+        display: flex;
+    }
+    
+    .third-arrival-container{
+        display: flex;
+    }
+
+
+}
+
+@media only screen and (max-width: 900px){
+    /*First Arrival Responsive*/
+    .first-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #52616B;
+        color: rgb(245,245,245);
+    }
+    
+    
+    .first-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .first-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .first-arrival-size{
+        display: flex;
+    }
+    
+    .first-arrival-container{
+        display: flex;
+    }
+
+    /*Second Arrival Responsive*/
+
+    .second-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F5F9;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .second-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .second-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .second-arrival-size{
+        display: flex;
+
+    }
+    
+    .second-arrival-container{
+        display: flex;
+    }
+    
+
+    /*Third Arrival Responsive*/
+    .third-new-arrival{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  #C9D6DF;
+        color: rgb(10,10,10);
+    }
+    
+    
+    .third-arrival-text{
+        margin: 0;
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .third-arrival-img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .third-arrival-size{
+        display: flex;
+    }
+    
+    .third-arrival-container{
+        display: flex;
+    }
+
+}
